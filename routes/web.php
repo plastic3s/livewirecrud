@@ -19,14 +19,14 @@ use Illuminate\Support\Facades\Route;
 //});
 
 
-Route::domain('user.livewirecrud.test')->group(function () {
-    Route::get('/', function () { return view('welcome'); });
-    Route::get('/users', [App\Http\Controllers\HomeController::class, 'indexUsers'])->name('users.home');
-});
-Route::domain('admin.livewirecrud.test')->group(function () {
-    Route::get('/', function () { return view('welcome'); });
-    Route::get('/users', [App\Http\Controllers\HomeController::class, 'indexAdmins'])->name('admins.home');
-});
+//Route::domain('user.livewirecrud.test')->group(function () {
+//    Route::get('/', function () { return view('welcome'); });
+//    Route::get('/users', [App\Http\Controllers\HomeController::class, 'indexUsers'])->name('users.home');
+//});
+//Route::domain('admin.livewirecrud.test')->group(function () {
+//    Route::get('/', function () { return view('welcome'); });
+//    Route::get('/users', [App\Http\Controllers\HomeController::class, 'indexAdmins'])->name('admins.home');
+//});
 
 //Route::domain('livewirecrud.vercel.app')->group(function () {
     Route::get('/', function () { return view('welcome'); });
