@@ -28,7 +28,7 @@ Route::domain('admin.livewirecrud.test')->group(function () {
     Route::get('/users', [App\Http\Controllers\HomeController::class, 'indexAdmins'])->name('admins.home');
 });
 
-Route::domain('tcms2.livewirecrud.test')->group(function () {
+Route::domain('livewirecrud.vercel.app')->group(function () {
     Route::get('/', function () { return view('welcome'); });
 });
 
